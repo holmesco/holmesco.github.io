@@ -80,10 +80,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "connor holmes"
+  name             : "Connor Holmes"
   avatar           : "profile_square.png"
-  bio              : "PhD Candidate at the University of Toronto Robotics Institute"
-  location         : #"Toronto, ON, Canada"
+  bio              : "PhD Candidate"
+  location         : "Toronto, ON, Canada"
   employer         :
   pubmed           : 
   googlescholar    : "https://scholar.google.ca/citations?user=NA_VuvQAAAAJ&hl=en"

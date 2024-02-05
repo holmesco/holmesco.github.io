@@ -1,18 +1,9 @@
 # Authors
 
-Name Name:
-  name        : "Name Name"
-  uri         : "http://name.com"
-  email       : "name@name.com"
-  bio         : "This is the first name."
-  avatar      : "bio-photo-2.jpg"
-  twitter     : "name"
-  google_plus : "Name"
-
-Name2 Name2:
-  name        : "Name2 Name2"
-  email       : "name2@name2.com"
-  bio         : "I ordered what?"
-  avatar      : "bio-photo.jpg"
-  twitter     : "name2"
-  google_plus : "Name"
+Connor Holmes:
+  name        : "Connor Holmes"
+  uri         : "holmesco.github.io"
+  email       : "connor.holmes@mail.utoronto.ca"
+  bio         : "PhD Candidate"
+  avatar      : "profile_square.png"
+  googlescholar : "https://scholar.google.ca/citations?user=NA_VuvQAAAAJ&hl=en"
