@@ -9,4 +9,6 @@ redirect_from:
 
 {% include base_path %}
 
-This page is currently under construction.
+A copy of my Curriculum Vitae is available [here](/files/cholmes_CV.pdf)
+
+*Updated February 6, 2024*
