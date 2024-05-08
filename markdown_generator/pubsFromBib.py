@@ -27,7 +27,7 @@ import re
 #todo: incorporate different collection types rather than a catch all publications, requires other changes to template
 publist = {
     "proceeding": {
-        "file" : "proceedings.bib",
+        "file" : "CHolmesPapers.bib",
         "venuekey": "booktitle",
         "venue-pretext": "In the proceedings of ",
         "collection" : {"name":"publications",
@@ -35,7 +35,7 @@ publist = {
         
     },
     "journal":{
-        "file": "pubs.bib",
+        "file": "CHolmesPapers.bib",
         "venuekey" : "journal",
         "venue-pretext" : "",
         "collection" : {"name":"publications",
@@ -137,18 +137,22 @@ for pubsource in publist:
 
             md += "\ncitation: '" + html_escape(citation) + "'"
 
-            md += "\n---"
+            md += "\n---\n"
 
             
             ## Markdown description for individual page
             if note:
                 md += "\n" + html_escape(b["note"]) + "\n"
 
+            if 'abstract' in b:
+                md += "\n**Abstract**: " + html_escape(b["abstract"]) + "\n"
+            
             if url:
                 md += "\n[Access paper here](" + b["url"] + "){:target=\"_blank\"}\n" 
             else:
                 md += "\nUse [Google Scholar](https://scholar.google.com/scholar?q="+html.escape(clean_title.replace("-","+"))+"){:target=\"_blank\"} for full citation"
 
+        
             md_filename = os.path.basename(md_filename)
 
             with open("../_publications/" + md_filename, 'w') as f:

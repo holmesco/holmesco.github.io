@@ -12,7 +12,7 @@ I am a PhD candidate studying at the [University of Toronto Robotics Institute](
 
 To date, my research has focused on the development of  **certifiably correct** algorithms that solve key problems in robotics (particularly in state-estimation). These algorithms leverage *convex relaxations* in order to either globally solve a given problem or verifiy correctness of a given solution.
 
-[Click here]({% post_url 2024-02-04-speed_and_safety %}) for more info about my current stream of research.
+[Click here](/files/research_statement.pdf) for more info about my current streams of research.
 
 Background
 ======
