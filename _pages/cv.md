@@ -11,4 +11,4 @@ redirect_from:
 
 A copy of my Curriculum Vitae is available [here](/files/cholmes_CV.pdf)
 
-*Updated February 6, 2024*
+*Updated January 13, 2025*

@@ -1,0 +1,12 @@
+---
+title: "On Semidefinite Relaxations for Matrix-Weighted State-Estimation Problems in Robotics"
+collection: publications
+permalink: /publication/2024-01-01-On-Semidefinite-Relaxations-for-Matrix-Weighted-State-Estimation-Problems-in-Robotics
+date: 2024-01-01
+venue: 'IEEE Transactions on Robotics'
+citation: ' Connor Holmes,  Frederike D{\&quot;u}mbgen,  Timothy Barfoot, &quot;On Semidefinite Relaxations for Matrix-Weighted State-Estimation Problems in Robotics.&quot; IEEE Transactions on Robotics, 2024.'
+---
+
+**Abstract**: In recent years, there has been remarkable progress in the development of so-called certifiable perception methods, which leverage semidefinite, convex relaxations to find global optima of perception problems in robotics. However, many of these relaxations rely on simplifying assumptions that facilitate the problem formulation, such as an isotropic measurement noise distribution. In this article, we explore the tightness of the semidefinite relaxations of matrix-weighted (anisotropic) state-estimation problems and reveal the limitations lurking therein: matrix-weighted factors can cause convex relaxations to lose tightness. In particular, we show that the semidefinite relaxations of localization problems with matrix weights may be tight only for low noise levels. To better understand this issue, we introduce a theoretical connection between the posterior uncertainty of the state estimate and the certificate matrix obtained via convex relaxation. With this connection in mind, we empirically explore the factors that contribute to this loss of tightness and demonstrate that redundant constraints can be used to regain it. As a second technical contribution of this article, we show that the state-of-the-art relaxation of scalar-weighted simultaneous localization and mapping cannot be used when matrix weights are considered. We provide an alternate formulation and show that its semidefinite program relaxation is not tight (even for very low noise levels) unless specific redundant constraints are used. We demonstrate the tightness of our formulations on both simulated and real-world data.
+
+Use [Google Scholar](https://scholar.google.com/scholar?q=On+Semidefinite+Relaxations+for+Matrix+Weighted+State+Estimation+Problems+in+Robotics){:target="_blank"} for full citation

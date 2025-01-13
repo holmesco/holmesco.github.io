@@ -1,0 +1,184 @@
+@article{barfootCertifiablyOptimalRotation2024,
+  title = {Certifiably {{Optimal Rotation}} and {{Pose Estimation Based}} on the {{Cayley Map}}},
+  author = {Barfoot, Timothy D. and Holmes, Connor and D{\"u}mbgen, Frederike},
+  year = {2024},
+  month = sep,
+  journal = {The International Journal of Robotics Research},
+  pages = {02783649241269337},
+  publisher = {SAGE Publications Ltd STM},
+  urldate = {2024-11-03},
+  abstract = {We present novel, convex relaxations for rotation and pose estimation problems that can a posteriori guarantee global optimality for practical measurement noise levels. Some such relaxations exist in the literature for specific problem setups that assume the matrix von Mises-Fisher distribution (a.k.a., matrix Langevin distribution or chordal distance) for isotropic rotational uncertainty. However, another common way to represent uncertainty for rotations and poses is to define anisotropic noise in the associated Lie algebra. Starting from a noise model based on the Cayley map, we define our estimation problems, convert them to Quadratically Constrained Quadratic Programs (QCQPs), then relax them to Semidefinite Programs (SDPs), which can be solved using standard interior-point optimization methods; global optimality follows from Lagrangian strong duality. We first show how to carry out basic rotation and pose averaging. We then turn to the more complex problem of trajectory estimation, which involves many pose variables with both individual and inter-pose measurements (or motion priors). Our contribution is to formulate SDP relaxations for all these problems based on the Cayley map (including the identification of redundant constraints) and to show them working in practical settings. We hope our results can add to the catalogue of useful estimation problems whose solutions can be a posteriori guaranteed to be globally optimal.},
+  langid = {english},
+  file = {C:\Users\conno\Zotero\storage\A7LKHREV\Barfoot et al. - 2024 - Certifiably optimal rotation and pose estimation based on the Cayley map.pdf}
+}
+
+@article{barfootFineLineTotal2022,
+  title = {A {{Fine Line}}: {{Total Least-Squares Line Fitting}} as {{QCQP Optimization}}},
+  shorttitle = {A {{Fine Line}}},
+  author = {Barfoot, Timothy D. and Holmes, Connor and Dumbgen, Frederike},
+  year = {2022},
+  month = jun,
+  eprint = {2206.05082},
+  primaryclass = {cs, math},
+  publisher = {arXiv},
+  urldate = {2024-02-06},
+  abstract = {This note uses the Total Least-Squares (TLS) line-fitting problem as a canvas to explore some modern optimization tools. The contribution is meant to be tutorial in nature. The TLS problem has a lot of mathematical similarities to important problems in robotics and computer vision but is easier to visualize and understand. We demonstrate how to turn this problem into a Quadratically Constrained Quadratic Program (QCQP) so that it can be cast either as an eigenproblem or a Semi-Definite Program (SDP). We then turn to the more challenging situation where a Geman-McClure cost function and M-estimation are used to reject outlier datapoints. Using Black-Rangarajan duality, we show this can also be cast as a QCQP and solved as an SDP; however, with a lot of data the SDP can be slow and as such we show how we can construct a certificate of optimality for a faster method such as Iteratively Reweighted Least-Squares (IRLS).},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Robotics,Mathematics - Optimization and Control},
+  file = {C\:\\Users\\conno\\Zotero\\storage\\C74FTZ5H\\Barfoot et al_2022_A Fine Line.pdf;C\:\\Users\\conno\\Zotero\\storage\\Z3XWFZUM\\2206.html},
+  journal = {arXiv:2206.05082}
+}
+
+@article{dumbgenExploitingChordalSparsity2024,
+  title = {Exploiting {{Chordal Sparsity}} for {{Fast Global Optimality}} with {{Application}} to {{Localization}}},
+  author = {D{\"u}mbgen, Frederike and Holmes, Connor and Barfoot, Timothy D.},
+  year = {2024},
+  month = jun,
+  eprint = {2406.02365},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  urldate = {2024-06-11},
+  abstract = {In recent years, many estimation problems in robotics have been shown to be solvable to global optimality using their semidefinite relaxations. However, the runtime complexity of off-the-shelve semidefinite programming solvers is up to cubic in problem size, which inhibits real-time solutions of problems involving large state dimensions. We show that for a large class of problems, namely those with chordal sparsity, we can reduce the complexity of these solvers to linear in problem size. In particular, we show how to replace the large positive-semidefinite variable by a number of smaller interconnected ones using the well-known chordal decomposition. This formulation also allows for the straightforward application of the alternating direction method of multipliers (ADMM), which can exploit parallelism for increased scalability. We show in simulation that the algorithms provide a significant speed up for two example problems: matrix-weighted and range-only localization.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Robotics},
+  file = {C\:\\Users\\conno\\Zotero\\storage\\HC87Y7VU\\Dümbgen et al_2024_Exploiting Chordal Sparsity for Fast Global Optimality with Application to.pdf;C\:\\Users\\conno\\Zotero\\storage\\AWQZHQIY\\2406.html},
+  journal = {arXiv:2406.02365}
+}
+
+@article{dumbgenGloballyOptimalState2024,
+  title = {Toward {{Globally Optimal State Estimation Using Automatically Tightened Semidefinite Relaxations}}},
+  author = {D{\"u}mbgen, Frederike and Holmes, Connor and Agro, Ben and Barfoot, Timothy},
+  year = {2024},
+  journal = {IEEE Transactions on Robotics},
+  volume = {40},
+  pages = {4338--4358},
+  urldate = {2024-11-03},
+  abstract = {In recent years, semidefinite relaxations of common optimization problems in robotics have attracted growing attention due to their ability to provide globally optimal solutions. In many cases, it was shown that specific handcrafted redundant constraints are required to obtain tight relaxations, and thus global optimality. These constraints are formulation-dependent and typically identified through a lengthy manual process. Instead, the present article suggests an automatic method to find a set of sufficient redundant constraints to obtain tightness, if they exist. We first propose an efficient feasibility check to determine if a given set of variables can lead to a tight formulation. Second, we show how to scale the method to problems of bigger size. At no point of the process do we have to find redundant constraints manually. We showcase the effectiveness of the approach, in simulation and on real datasets, for range-based localization and stereo-based pose estimation. We also reproduce semidefinite relaxations presented in recent literature and show that our automatic method always finds a smaller set of constraints sufficient for tightness than previously considered.},
+  keywords = {Global optimality,localization,Location awareness,Manuals,Matrices,Optimization,optimization and optimal control,robot safety,Robots,State estimation,Vectors},
+  file = {C:\Users\conno\Zotero\storage\PLC2EBAA\Dümbgen et al. - 2024 - Toward Globally Optimal State Estimation Using Automatically Tightened Semidefinite Relaxations.pdf}
+}
+
+@article{dumbgenSafeSmoothCertified2023,
+  title = {Safe and {{Smooth}}: {{Certified Continuous-Time Range-Only Localization}}},
+  shorttitle = {Safe and {{Smooth}}},
+  author = {D{\"u}mbgen, Frederike and Holmes, Connor and Barfoot, Timothy D.},
+  year = {2023},
+  month = feb,
+  journal = {IEEE Robotics and Automation Letters},
+  volume = {8},
+  number = {2},
+  pages = {1117--1124},
+  abstract = {A common approach to localize a mobile robot is by measuring distances to points of known positions, called anchors. Locating a device from distance measurements is typically posed as a non-convex optimization problem, stemming from the nonlinearity of the measurement model. Non-convex optimization problems may yield suboptimal solutions when local iterative solvers such as Gauss-Newton are employed. In this letter, we design an optimality certificate for continuous-time range-only localization. Our formulation allows for the integration of a motion prior, which ensures smoothness of the solution and is crucial for localizing from only a few distance measurements. The proposed certificate comes at little additional cost since it has the same complexity as the sparse local solver itself: linear in the number of positions. We show, both in simulation and on real-world datasets, that the efficient local solver often finds the globally optimal solution (confirmed by our certificate), but it may converge to local solutions with high errors, which our certificate correctly detects.},
+  keywords = {Certifiable algorithms,Distance measurement,global optimality,lagrangian duality,localization,Location awareness,Manganese,Noise measurement,Optimization,optimization and optimal control,Robots,Trajectory},
+  file = {C\:\\Users\\conno\\Zotero\\storage\\E8EUCAID\\Dümbgen et al. - 2023 - Safe and Smooth Certified Continuous-Time Range-O.pdf;C\:\\Users\\conno\\Zotero\\storage\\BSPVH58I\\stamp.html}
+}
+
+@misc{holmesChallengeAcademiaCritical2019,
+  type = {Poster},
+  title = {A {{Challenge For Academia}}: {{Critical Technologies}} for the {{Future}} of {{On-Orbit Servicing}}},
+  author = {Holmes, Connor and Allen, Andrew and Bakambu, Joseph},
+  year = {2019},
+  month = may,
+  langid = {english},
+  file = {C:\Users\conno\Zotero\storage\7AMYWDUH\Holmes et al. - A Challenge For Academia Critical Technologies fo.pdf}
+}
+
+@article{holmesEfficientGlobalOptimality2023,
+  title = {An {{Efficient Global Optimality Certificate}} for {{Landmark-Based SLAM}}},
+  author = {Holmes, Connor and Barfoot, Timothy D.},
+  year = {2023},
+  month = mar,
+  journal = {IEEE Robot. Autom. Lett.},
+  volume = {8},
+  number = {3},
+  pages = {1539--1546},
+  urldate = {2023-04-19},
+  abstract = {Modern state estimation is often formulated as an optimization problem and solved using efficient local search methods. These methods at best guarantee convergence to local minima, but, in some cases, global optimality can also be certified. Although such global optimality certificates have been well established for 3D pose-graph optimization, the details have yet to be worked out for the 3D landmark-based SLAM problem, in which estimated states include both robot poses and map landmarks. In this letter, we address this gap by using a graph-theoretic approach to cast the subproblems of landmark-based SLAM into a form that yields a sufficient condition for global optimality. Efficient methods of computing the optimality certificates for these subproblems exist, but first require the construction of a large data matrix. We show that this matrix can be constructed with complexity that remains linear in the number of landmarks and does not exceed the stateof-the-art computational complexity of one local solver iteration. We demonstrate the efficacy of the certificate on simulated and real-world landmark-based SLAM problems. We also integrate our method into the state-of-the-art SE-Sync pipeline to efficiently solve landmark-based SLAM problems to global optimality. Finally, we study the robustness of the global optimality certificate to measurement noise, taking into consideration the effect of the underlying measurement graph.},
+  langid = {english},
+  file = {G:\My Drive\TabletFiles\Holmes and Barfoot - 2023 - An Efficient Global Optimality Certificate for Lan.pdf}
+}
+
+@book{holmesPatternedLinearSystems2016,
+  title = {Patterned Linear Systems and Control},
+  author = {Holmes, Connor T.},
+  year = {2016},
+  publisher = {University of Toronto (Canada)},
+  urldate = {2024-02-06},
+  file = {C:\Users\conno\Zotero\storage\PLI3LTTK\Holmes_2016_Patterned linear systems and control.pdf}
+}
+
+@inproceedings{holmesPatternPreservingPole2016,
+  title = {Pattern Preserving Pole Placement and Stabilization for Linear Systems},
+  booktitle = {2016 {{American Control Conference}} ({{ACC}})},
+  author = {Holmes, Connor and Broucke, Mireille E.},
+  year = {2016},
+  month = jul,
+  pages = {5181--5186},
+  abstract = {A method to characterize the symmetries inherent within physical systems via automorphism groups has already been established. In this paper, we define a specific block diagonal form to which a matrix can be decomposed if and only if it conforms with a given set of symmetries. We employ this decomposition and resulting block diagonal form to define controllability and stabilizability and give a pole placement algorithm when the feedback matrix is constrained by the inherent patterns of the system. Finally, an example is given which demonstrates our controllability notion and pole placement algorithm.},
+  keywords = {Controllability,Decentralized control,Linear systems,Matrix decomposition,Optimal control,Standards,Symmetric matrices},
+  file = {C\:\\Users\\conno\\Zotero\\storage\\8T7ATNKY\\Holmes and Broucke - 2016 - Pattern preserving pole placement and stabilizatio.pdf;C\:\\Users\\conno\\Zotero\\storage\\9J94JPWU\\7526481.html}
+}
+
+@article{holmesPracticalDesignConsiderations2021,
+  title = {Practical {{Design Considerations}} for {{Performance}} and {{Robustness}} in the {{Face}} of {{Uncertain Flexible Dynamics}} in {{Space Manipulators}}},
+  author = {Holmes, Connor},
+  year = {2021},
+  journal = {Frontiers in Robotics and AI},
+  volume = {8},
+  urldate = {2022-07-11},
+  abstract = {Low frequency dynamics introduced by structural flexibility can result in considerable performance degradation and even instability in on-orbit, robotic manipulators. Although there is a wealth of literature that addresses this problem, the author has found that many advanced solutions are often precluded by practical considerations. On the other hand, classical, robust control methods are tractable for these systems if the design problem is properly constrained. This paper investigates a pragmatic engineering approach that evaluates the system's stability margins in the face of uncertain, flexible perturbation dynamics with frequencies that lie close to or within the bandwidth of the nominal closed-loop system. The robustness of classical control strategies is studied in the context of both collocated (joint rate) and non-collocated (force/torque and vision-based) feedback. It is shown that robust stability and performance depend on the open-loop control bandwidth of the nominal control law (as designed for a simplified, rigid plant). Namely, the designed bandwidth must be constrained to be lower than the minimum flexible mode frequency of the unmodeled dynamics by a given factor. This strategy gives credence to popular heuristic methods commonly used to reduce the effect of unmodeled dynamics in complex manipulator systems.},
+  file = {C:\Users\conno\Zotero\storage\WYAGZHVG\Holmes - 2021 - Practical Design Considerations for Performance an.pdf}
+}
+
+@article{holmesSDPRLayersCertifiableBackpropagation2024,
+  title = {{{SDPRLayers}}: {{Certifiable Backpropagation Through Polynomial Optimization Problems}} in {{Robotics}}},
+  shorttitle = {{{SDPRLayers}}},
+  author = {Holmes, Connor and D{\"u}mbgen, Frederike and Barfoot, Timothy D.},
+  year = {2024},
+  month = may,
+  eprint = {2405.19309},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  urldate = {2024-06-03},
+  abstract = {Differentiable optimization is a powerful new paradigm capable of reconciling model-based and learning-based approaches in robotics. However, the majority of robotics optimization problems are non-convex and current differentiable optimization techniques are therefore prone to convergence to local minima. When this occurs, the gradients provided by these existing solvers can be wildly inaccurate and will ultimately corrupt the training process. On the other hand, any non-convex robotics problems can be framed as polynomial optimization problems and, in turn, admit convex relaxations that can be used to recover a global solution via so-called certifiably correct methods. We present SDPRLayers, an approach that leverages these methods as well as state-of-the-art convex implicit differentiation techniques to provide certifiably correct gradients throughout the training process. We introduce this approach and showcase theoretical results that provide conditions under which correctness of the gradients is guaranteed. We demonstrate our approach on two simple-but-demonstrative simulated examples, which expose the potential pitfalls of existing, state-of-the-art, differentiable optimization methods. We apply our method in a real-world application: we train a deep neural network to detect image keypoints for robot localization in challenging lighting conditions. An open-source, PyTorch implementation of SDPRLayers will be made available upon paper acceptance.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Robotics},
+  file = {C\:\\Users\\conno\\Zotero\\storage\\JIGWYWJZ\\Holmes et al_2024_SDPRLayers.pdf;C\:\\Users\\conno\\Zotero\\storage\\VH8NVBKN\\2405.html},
+  journal = {arXiv:2405.19309}
+}
+
+@article{holmesSemidefiniteRelaxationsMatrixWeighted2024,
+  title = {On {{Semidefinite Relaxations}} for {{Matrix-Weighted State-Estimation Problems}} in {{Robotics}}},
+  author = {Holmes, Connor and D{\"u}mbgen, Frederike and Barfoot, Timothy},
+  year = {2024},
+  journal = {IEEE Transactions on Robotics},
+  volume = {40},
+  pages = {4805--4824},
+  urldate = {2024-11-03},
+  abstract = {In recent years, there has been remarkable progress in the development of so-called certifiable perception methods, which leverage semidefinite, convex relaxations to find global optima of perception problems in robotics. However, many of these relaxations rely on simplifying assumptions that facilitate the problem formulation, such as an isotropic measurement noise distribution. In this article, we explore the tightness of the semidefinite relaxations of matrix-weighted (anisotropic) state-estimation problems and reveal the limitations lurking therein: matrix-weighted factors can cause convex relaxations to lose tightness. In particular, we show that the semidefinite relaxations of localization problems with matrix weights may be tight only for low noise levels. To better understand this issue, we introduce a theoretical connection between the posterior uncertainty of the state estimate and the certificate matrix obtained via convex relaxation. With this connection in mind, we empirically explore the factors that contribute to this loss of tightness and demonstrate that redundant constraints can be used to regain it. As a second technical contribution of this article, we show that the state-of-the-art relaxation of scalar-weighted simultaneous localization and mapping cannot be used when matrix weights are considered. We provide an alternate formulation and show that its semidefinite program relaxation is not tight (even for very low noise levels) unless specific redundant constraints are used. We demonstrate the tightness of our formulations on both simulated and real-world data.},
+  keywords = {Anisotropic,Biological system modeling,certifiable,localization,Location awareness,Noise,optimization,Robot kinematics,Simultaneous localization and mapping,simultaneous localization and mapping (SLAM),State estimation,Synchronization,Transmission line matrix methods,Vectors},
+  file = {C\:\\Users\\conno\\Zotero\\storage\\WTNJSVIJ\\Holmes et al. - 2024 - On Semidefinite Relaxations for Matrix-Weighted State-Estimation Problems in Robotics.pdf;C\:\\Users\\conno\\Zotero\\storage\\4J6AZYN8\\10706005.html}
+}
+
+@inproceedings{kishDynamicModelingModular2014,
+  title = {Dynamic Modeling of Modular Multilevel {{DC}}/{{DC}} Converters for {{HVDC}} Systems},
+  booktitle = {2014 {{IEEE}} 15th {{Workshop}} on {{Control}} and {{Modeling}} for {{Power Electronics}} ({{COMPEL}})},
+  author = {Kish, Gregory J. and Holmes, Connor and Lehn, Peter W.},
+  year = {2014},
+  month = jun,
+  pages = {1--7},
+  abstract = {This paper presents the first dynamic model of the DC-MMC, a new class of modular multilevel single-stage dc/dc converters aptly suited for HVDC systems. A state-space model for a single string of the DC-MMC is developed and validated by comparing with time-domain simulation results from a comprehensive switched converter model. The developed averaged model is utilized to investigate submodule capacitor voltage balancing characteristics of the DC-MMC. In particular it is demonstrated that, unlike the dc/ac modular multilevel converter, direct ac modulation of the DC-MMC is not sufficient to keep capacitor voltages balanced. The developed model is also used to propose and validate a supplemental controller that suppresses unwanted second and third harmonic circulating ac currents within the DC-MMC.},
+  keywords = {Capacitors,Frequency modulation,Inductors,Integrated circuit modeling,Mathematical model,State-space methods,Switches},
+  file = {C\:\\Users\\conno\\Zotero\\storage\\8CQJEKCJ\\Kish et al. - 2014 - Dynamic modeling of modular multilevel DCDC conve.pdf;C\:\\Users\\conno\\Zotero\\storage\\8N527ML7\\6877167.html}
+}
+
+@inproceedings{lisusOpenWorldNerfbased2023,
+  title = {Towards Open World Nerf-Based Slam},
+  booktitle = {2023 20th {{Conference}} on {{Robots}} and {{Vision}} ({{CRV}})},
+  author = {Lisus, Daniil and Holmes, Connor and Waslander, Steven},
+  year = {2023},
+  pages = {37--44},
+  publisher = {IEEE},
+  urldate = {2024-02-06},
+  file = {C:\Users\conno\Zotero\storage\ZIIAYAJM\Lisus et al_2023_Towards open world nerf-based slam.pdf}
+}
